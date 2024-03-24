@@ -6,8 +6,16 @@ package modelos;
  */
 public class Rectangulo extends Figura{
 
+
+
+
+    private int base;
+
+
+    private int altura;
+    
     /**
-     * Default constructor
+     * Constructor rectangulo por defecto
      */
     public Rectangulo() {
     	base = 1;
@@ -15,64 +23,42 @@ public class Rectangulo extends Figura{
     }
 
     /**
-     * 
-     */
-    private int base;
-
-    /**
-     * 
-     */
-    private int altura;
-
-
-    /**
-     * @param base 
-     * @param altura
+     * Constructor rectangulo. Parametros: base (int) y altura (int)
      */
     public Rectangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
     }
 
-    /**
-     * @return
-     */
+
     public int getBase() {
         return base;
     }
 
-    /**
-     * @param base
-     */
+
     public void setBase(int base) {
         this.base = base;
     }
 
-    /**
-     * @return
-     */
+
     public int getAltura() {
         // TODO implement here
         return altura;
     }
 
-    /**
-     * @param altura
-     */
+
     public void setAltura(int altura) {
         this.altura = altura;
     }
 
-    /**
-     * @return
-     */
+
     @Override
     public String toString() {
         return "base=" + base + ", altura=" + altura;
     }
 
     /**
-     * @return
+     * @return area del rectangulo
      */
     @Override
     public double getArea() {
@@ -80,7 +66,7 @@ public class Rectangulo extends Figura{
     }
 
     /**
-     * @return
+     * @return perimetro del rectangulo
      */
     @Override
     public double getPerimetro() {

@@ -1,57 +1,46 @@
 package modelos;
 
 
-/**
- * 
- */
+
 public class Circulo extends Figura {
+	
+	private int radio;
+	
 
     /**
-     * Default constructor
+     * Constructor circulo por defecto
      */
     public Circulo() {
     	radio = 1;
     }
 
     /**
-     * 
-     */
-    private int radio;
-
-
-
-    /**
-     * @param base 
+     * Constructor circulo. Parametro: radio (int)
      */
     public Circulo(int radio) {
         this.radio = radio;
     }
-
-    /**
-     * @return
-     */
+    
+    
+    
     public int getRadio() {
         return radio;
     }
 
-    /**
-     * @param base
-     */
+
     public void setRadio(int radio) {
         this.radio = radio;
     }
 
 
-    /**
-     * @return
-     */
+
     @Override
     public String toString() {
         return "radio=" + radio ;
     }
 
     /**
-     * @return
+     * @return area del circulo
      */
     @Override
     public double getArea() {
@@ -59,7 +48,7 @@ public class Circulo extends Figura {
     }
 
     /**
-     * @return
+     * @return perimetro del circulo
      */
     @Override
     public double getPerimetro() {
