@@ -4,7 +4,7 @@ package modelos;
 /**
  * 
  */
-public class Circulo {
+public class Circulo extends Figura {
 
     /**
      * Default constructor
@@ -45,6 +45,7 @@ public class Circulo {
     /**
      * @return
      */
+    @Override
     public String toString() {
         return "radio=" + radio ;
     }
@@ -52,6 +53,7 @@ public class Circulo {
     /**
      * @return
      */
+    @Override
     public double getArea() {
         return Math.PI* (radio * radio);
     }
@@ -59,6 +61,7 @@ public class Circulo {
     /**
      * @return
      */
+    @Override
     public double getPerimetro() {
     	return (2 * Math.PI) * radio;
     }

@@ -4,7 +4,7 @@ package modelos;
 /**
  * 
  */
-public class Rectangulo {
+public class Rectangulo extends Figura{
 
     /**
      * Default constructor
@@ -66,6 +66,7 @@ public class Rectangulo {
     /**
      * @return
      */
+    @Override
     public String toString() {
         return "base=" + base + ", altura=" + altura;
     }
@@ -73,14 +74,16 @@ public class Rectangulo {
     /**
      * @return
      */
-    public int getArea() {
+    @Override
+    public double getArea() {
         return base * altura;
     }
 
     /**
      * @return
      */
-    public int getPerimetro() {
+    @Override
+    public double getPerimetro() {
         return (2*base) + (2*altura);
     }
 
